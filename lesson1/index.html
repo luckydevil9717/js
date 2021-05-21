@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        "use strict";
+
+        let tGradus = prompt('Введите температуру в градусах по Цельсию', '');
+        let tFar = (9 / 5) * tGradus + 32;
+        alert(tFar);
+
+        let name = 'Василий';
+        let admin = name;
+        alert(admin);
+
+        let a = 10 + 10 + "10"; // 2010, 10+10 и +строка 10
+        let b = 10 + "10" + 10; // 101010, строка+строка+строка
+        let с = 10 + 10 + +"10"; // 30, 10+10 + строка 10 преобразованое в число 10
+        let d = 10 / -""; // -Infinity деление на ноль 
+        let e = 10 / +"2,5"; // NaN деление на строку
+
+    </script>
+</body>
+
+</html>
