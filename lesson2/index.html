@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        'use strict';
+        /* 1задание */
+        let a = 1,
+            b = 1,
+            c, d;
+        c = ++a;
+        alert(c); // 2 префиксная форма возвращает новое значение
+        d = b++;
+        alert(d); // 1 постфиксная форма возвращает старое значение
+        c = 2 + ++a;
+        alert(c); // 5 префиксная форма+'а' уже равное 2, следовательно 'а' равно 3
+        d = 2 + b++;
+        alert(d); // 4 	постфиксная форма+'b' равное 2
+        alert(a); // 3	префиксная форма два раза
+        alert(b); // 3	постфиксная форма два раза
+
+        /* 2задание */
+        let a = 2;
+        let x = 1 + (a *= 2); //  5 т.к. x = 1 + (a = a * 2); 
+
+        /* 3задание */
+        let a = 9;
+        let b = 1;
+        if (a > 0 && b > 0) {
+            x = a - b;
+            alert(x);
+        } else if (a < 0 && b < 0) {
+            x = a * b;
+            alert(x);
+        } else if (a < 0 && b > 0 || a > 0 && b < 0) {
+            x = a + b;
+            alert(x);
+        }
+
+        /* 4задание */
+        let a = 5;
+        let b = 9;
+
+        function sum(a, b) {
+            return a + b;
+        }
+
+        function sub(a, b) {
+            return a - b;
+        }
+
+        function div(a, b) {
+            return a / b;
+        }
+
+        function multi(a, b) {
+            return a * b;
+        }
+
+        /*5задание*/
+        function mathOperation(arg1, arg2, operation) {
+            if (operation == ' + ') {
+                console.log(sum(arg1, arg2));
+            }
+            return arg1 + arg2;
+            if (operation == ' - ') {
+                console.log(sub(arg1, arg2));
+            }
+            if (operation == ' / ') {
+                console.log(div(arg1, arg2));
+            }
+            if (operation == ' * ') {
+                console.log(multi(arg1, arg2));
+            }
+        }
+
+    </script>
+</body>
+
+</html>
